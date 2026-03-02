@@ -20,7 +20,9 @@ Many “hard” objects look like they share the same *shape*:
 
 This document proposes a unifying language for that shape using:
 category-theoretic fixed-point/diagonal arguments, dynamical-systems boundary phenomena, and algorithmic complexity.
-
+In this repo,$𝐷(𝑆)$ D(S) means decidable basin membership / boundedness for a specified attractor 
+𝐴 and compact set 𝐾. The ‘shadow’ is the basin boundary $∂𝐵(𝐴)$.We do not claim entropy implies non-invertibility or undecidability. 
+Undecidability requires universality-style encoding; hyperbolic regimes can have fractal boundaries but remain computable.
 ---
 
 ## Table of Contents
