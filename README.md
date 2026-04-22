@@ -9,6 +9,37 @@
 
 ---
 
+## Code
+
+The concepts described in this document are implemented in Python.
+
+```
+src/
+  bfs.py        BoundedFormalSystem, fixed-point detection, basin,
+                decidable core D(S), shadow U(S), boundary ∂S
+  collatz.py    Discrete Collatz map, Chamberland continuous extension,
+                orbits, stopping times, dynamical zeta function
+  entropy.py    Topological entropy (spanning-set & Lyapunov estimates,
+                transition-matrix method)
+  adjunction.py ForwardMap / ReverseMap pair, adjunction-failure diagnostics
+tests/          55 unit tests (pytest)
+examples/
+  collatz_demo.py      Stopping-time plots, Chamberland orbits
+  polynomial_demo.py   Logistic-map basins, bifurcation diagram,
+                       adjunction-failure demo, entropy table
+```
+
+**Quick start:**
+
+```bash
+pip install -r requirements.txt
+python -m pytest tests/           # 55 tests
+python examples/collatz_demo.py
+python examples/polynomial_demo.py
+```
+
+---
+
 ## What this repo is trying to do
 
 Many "hard" objects look like they share the same *shape*:
